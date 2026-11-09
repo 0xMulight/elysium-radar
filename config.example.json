@@ -1,0 +1,51 @@
+{
+  "network": {
+    "chain_id": 99901,
+    "rpc_urls": [
+      "https://rpc.elysium.kinetiq.xyz",
+      "https://rpc.hips.family"
+    ],
+    "explorer": "https://elysium.kinetiq.xyz/explorer"
+  },
+  "sources": {
+    "perpme_api": "https://perpme.fun/elysium/api/v1",
+    "opsis_api": "https://elysiumexplore.com/v1",
+    "dexscreener_api": "https://api.dexscreener.com/latest/dex/tokens"
+  },
+  "monitor": {
+    "poll_seconds": 30,
+    "confirmations": 3,
+    "max_blocks_per_round": 300,
+    "bootstrap_backfill_blocks": 0,
+    "api_limit": 50,
+    "notify_on_new_tokens": true,
+    "notify_on_factory_launch": true,
+    "notify_on_machine_changes": true
+  },
+  "machine": {
+    "token_contract": "0xf67E8dA4251EbA24f9679fd3F9e39405BAfdC10C",
+    "nft_contract": "0xbCA8d39B2dd3f19F329b055189a9cc39ED7c4b89",
+    "price_change_alert_pct": 12,
+    "holders_change_alert": 50,
+    "top10_change_alert_pp": 7,
+    "generation_weights_unverified": {
+      "Gen I Mainframe": 1.25,
+      "Gen II Ticker": 1.0,
+      "Gen III Temple": 1.75,
+      "Gen IV Pocket": 1.25,
+      "Gen V Colossus": 3.0
+    },
+    "odds_remaining_counts_verified_by_user": {},
+    "reward_model": {
+      "daily_distributed_hype_verified": null,
+      "total_active_weight_verified": null,
+      "machine_buy_price_hype_verified": null,
+      "trade_fee_pct": null
+    }
+  },
+  "telegram": {
+    "enabled": false,
+    "bot_token": "",
+    "chat_id": ""
+  }
+}

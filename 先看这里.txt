@@ -1,0 +1,16 @@
+Elysium Radar v1.0｜Windows 10 双击版
+
+1. 先解压整个 ZIP（不要在压缩包里直接启动）。
+2. 确保电脑装了 Python 3： https://www.python.org/downloads/windows/
+   安装时勾选 Add Python to PATH。已装 Python 3 就跳过。
+3. 双击【打开监控面板.bat】即可打开可视化监控界面。
+   不想看到黑色窗口，也可以双击【无黑框启动.vbs】。
+4. 在界面先点【检查主网】，必须看到 chain ID 99901，再点【仅运行一次】。
+5. 然后点【开始持续监控】。首次运行只登记旧币，不误报。
+6. 想要 Telegram 通知，在界面填 Bot Token 和 Chat ID 后保存、测试。
+7. 稀有度概率、回本天数：需要真实剩余数量和已核验收益数据；没数据就显示未知，不会瞎算。
+
+本工具不需要 Grok 额度、不接钱包、不发交易。
+监控要在本机持续运行；关闭窗口即停止。
+
+完整版说明和技术边界见 README.md。Grok Bot 指令见 SKILL.md。
